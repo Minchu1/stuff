@@ -9,10 +9,10 @@ this.greeting= createElement("h2");
 display(){
 var title=createElement("h1");
 title.html("epic")
-title.position(400,100);
+title.position( displayWidth/2,0);
 
-this.input.position(400,200);
-this.button.position(450,250);
+this.input.position(displayWidth/2-50,displayHeight/2-50);
+this.button.position(displayWidth/2-50,displayHeight/2);
 
 this.button.mousePressed(()=>{
     this.input.hide();
@@ -23,7 +23,7 @@ this.button.mousePressed(()=>{
     player.update();
     player.updateCount(playerCount);
     this.greeting.html("hello "+player.name);
-    this.greeting.position(400,200);
+    this.greeting.position(displayWidth/2-50,100);
 })
 
 }
